@@ -1,0 +1,102 @@
+.services-section {
+	position: relative;
+	overflow: hidden;
+	height: 430px;
+
+	&__title {
+		margin-top: 21px;
+		margin-left: 24.8px;
+		margin-bottom: 40px;
+		font-size: 25px;
+		line-height: 2;
+		letter-spacing: -0.63px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+
+		@mixin atLarge {
+			font-size: 30px;
+			margin: 80px 0 40px 101px;
+			line-height: 1.67;
+			letter-spacing: -0.75px;
+		}
+	}
+
+	&__controls {
+		position: absolute;
+		right: 19px;
+		top: 40px;
+	}
+
+	&__pattern {
+		position: absolute;
+		z-index: -1;
+		bottom: 0px;
+	}
+
+	&--flex {
+		display: flex;
+		margin-left: 17px;
+		position: relative;
+
+		@mixin atLarge {
+			align-items: center;
+			justify-content: center;
+			margin: -10px 40px;
+		}
+	}
+
+	&__service {
+		width: 197px;
+		height: 164px;
+		margin: 10px;
+		margin-bottom: 143px;
+		background-color: $midGray;
+		border-top: 3px solid $emeraldGreen;
+		padding: 19px 20px;
+		box-sizing: border-box;
+		cursor: pointer;
+		position: relative;
+
+		flex: 1 0 auto;
+
+		transition: all .2s ease-in;
+
+		@mixin atLarge {
+			flex-grow: 0;
+		}
+	}
+
+	&__service {
+		h3 {
+			font-size: 20px;
+			line-height: 1.1;
+			width: 160px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+		}
+
+		img {
+			position: absolute;
+			bottom: 20px;
+			right: 18px;
+		}
+	}
+
+	&__service:hover {
+		background-color: $emeraldGreen;
+		animation: move 2s infinite;
+	}
+
+	@keyframes move {
+		25% {
+			transform: rotate(-5deg);
+		}
+		100% {
+			transform: rotate(5deg);
+		}
+	}
+}

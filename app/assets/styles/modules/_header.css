@@ -1,0 +1,49 @@
+.header {
+	position: absolute;
+	background-color: $mainGreen;
+	z-index: 10;
+	top: 18px;
+	padding: 13px 24px 11px 24px;
+
+	@mixin atLarge {
+		top: 32px;
+		padding: 21px 45px;
+	}
+
+	&__logo {
+		height: 15px;
+		vertical-align: middle;
+		cursor: pointer;
+		@mixin atLarge {
+			width: 139.2px;
+			width: auto;
+			height: 32.8px;
+			object-fit: contain;
+		}
+	}
+
+	&__line {
+		display: none;
+		@mixin atLarge {
+			display: inline;
+			width: 2px;
+			height: 51px;
+			margin: 0 24px 0 30px;
+			vertical-align: middle;
+		}
+	}
+
+	&__slogan {
+		display: none;
+		@mixin atLarge {
+			display: inline-block;
+			vertical-align: middle;
+			width: 232px;
+			height: 41px;
+			font-size: 16px;
+			line-height: 1.28;
+			font-weight: normal;
+			text-transform: uppercase;
+		}
+	}
+}

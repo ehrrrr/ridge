@@ -1,0 +1,43 @@
+.icon {
+	display: inline;
+	width: 18px;
+
+	&__side-arrow {
+		width: 20px;
+		height: 19px;
+		padding: 0 5px;
+		box-sizing: border-box;
+		cursor: pointer;
+		margin-right: 14.2px;
+		transition: all .2s ease-in-out;
+
+		@mixin atLarge {
+			display: none;
+		}
+
+		&--disabled {
+			opacity: .2 !important;
+		}
+	}
+
+	&__side-arrow:hover {
+		opacity: .7;
+	}
+}
+
+#icon__menu {
+	width: 21px;
+	padding-right: 17px;
+}
+
+#icon__arrow {
+	width: 19px;
+}
+
+#icon__search {
+	padding-right: 21px;
+}
+
+#icon__side-arrow--left {
+	transform: rotate(180deg);
+}

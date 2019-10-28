@@ -1,0 +1,21 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Ropa Sans', sans-serif;
+	font-size: 20px;
+	background-color: $mainGray;
+	color: $lightTextColor;
+	box-sizing: border-box;
+	overflow-x: hidden;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
